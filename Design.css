@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #313131;
+    font-family: Arial, sans-serif;
+    color: #d9d9d9;
+}
+header{
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-bottom:1rem ;
+    color: #313131;
+    font-size: 20px;
+    height: 111px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    gap: 0.5rem;
+}
+.logo .logo-icon{
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+}
+
+:hover.logo{
+    transition: 1s;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(98%) saturate(7497%) hue-rotate(-7deg) brightness(96%) contrast(126%);
+    color: red;
+}
+nav{
+    margin-right: 122px; 
+}
+nav a {
+    margin-left: 70px;
+    text-decoration: none;
+    color: #313131;
+    font-weight: 500 ;
+}
+main{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.intro{
+    background-color: #d9d9d9;
+    border-radius: 40px;
+    padding: 7rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.photo{
+    background-color: #313131;
+    padding: 1.3rem;
+    border-radius: 30px;
+}
+.photo img{
+    width: 400px;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.text h1 {
+    font-size: 4rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: #313131;
+    font-weight: 700 ;
+}
+.text p {
+    font-size: 1.2rem;
+    color: #313131;
+}
