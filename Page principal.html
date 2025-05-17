@@ -7,20 +7,29 @@
     <link rel="stylesheet" href="Design.css">
 </head>
 <body>
+
+    <!--HEADER--------------------------------------------------------------------------------------------->
     <header>
-        <div class="logo">
-            <span>PORT</span>
-            <img src="Vector.png" alt="home" class="logo-icon">
-            <span>FOLIO</span>
-        </div>
-        <nav>
-                <a href="#présentation">Présentation</a>
-                <a href="#Portfolio">Portfolio</a>
-                <a href="#CV">CV</a>
-                <a href="#Contact">Contact</a>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#présentation">Présentation</a></li>
+                <li><a href="#compétence">Compétence</a></li>
+                <li><a href="#Projet">
+                        <div class="logo">
+                            <img src="icon Portfolio.png" alt="home" class="logo-icon">
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#CV">Curriculum vitæ</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <img src="menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="" class="menu-burger" >
         </nav>
-    </header>
-    
+    </header>      
+    <!--HEADER--------------------------------------------------------------------------------------------->
+
+
+    <!--MAIN--------------------------------------------------------------------------------------------->
     <main>
         <section class="intro">
             <div class="text">
@@ -36,5 +45,20 @@
             </div>
         </section>
     </main>
+    <!--MAIN--------------------------------------------------------------------------------------------->
+
+
+
+
+    <script>
+        const menuBurger = document.querySelector('.menu-burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuBurger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        });
+    </script>
+
+
 </body>
 </html>
