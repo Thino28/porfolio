@@ -83,6 +83,11 @@ a{
     }
 }
 
+.nav-links li :hover {
+    color: red;
+    border-bottom: 2px solid #313131;
+}
+
 /*---FIN HEADER---------------------------------------*/
 
 main{
@@ -176,4 +181,7 @@ main{
 .text-case p{
     text-align: justify;
     font-size: 1.3em;
+}
+.text-case:hover .important{
+    color: #FF7979;
 }
