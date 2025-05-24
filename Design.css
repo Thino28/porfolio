@@ -1,5 +1,7 @@
 html{
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+
 }
 *{
     margin: 0;
@@ -18,7 +20,13 @@ body{
 .navbar{
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Pour qu'il passe devant tout */
 }
+
+
 
 a{
     color: #313131;
@@ -32,6 +40,7 @@ a{
     width: 50em;
     margin-top: 20px;
     border-radius: 1.5em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.784);    
     height: 5em;
 }
 
@@ -95,6 +104,9 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 2em;
+    padding-top: 6em;
+
 }
 
 .intro{
@@ -138,13 +150,16 @@ main{
     font-size: 1.2rem;
     color: #313131;
 }
-.presentation{
+
+
+
+.presentation {
     margin-top: 3em;
     padding: 3em 1em;
-    height: 100vh;
-
-    
+    min-height: 100vh; 
+    box-sizing: border-box;
 }
+
 .presentation h2{
     font-size: 2em;
     border-bottom: 5px solid white;
@@ -160,7 +175,8 @@ main{
     background-color: #d9d9d9;
     padding: 2em;
     width: 70vw;
-    border-radius: 2em;    
+    border-radius: 2em;
+    margin-bottom: 2em;    
 }
 .presentation-container{
     display: flex;
@@ -184,4 +200,254 @@ main{
 }
 .text-case:hover .important{
     color: #FF7979;
+}
+@media screen and (max-width: 768px) {
+  .presentation {
+    padding: 2em 1em;
+    height: auto; /* évite le scroll inutile sur petits écrans */
+  }
+
+  .presentation h2 {
+    font-size: 1.5em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    border-bottom: 3px solid white;
+  }
+
+  .text-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    padding: 1.5em 1em;
+    gap: 1.5em;
+  }
+
+  .text-case {
+    padding: 1.5em;
+    max-width: 80%;
+  }
+
+  .text-case h3 {
+    font-size: 1.3em;
+  }
+
+  .text-case p {
+    font-size: 1em;
+  }
+}
+
+
+
+.competences {
+    padding: 2em;
+    font-family: sans-serif;
+    min-height: 100vh; 
+    box-sizing: border-box;
+}
+
+.competences h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    border-bottom: 5px solid white;
+    margin-left: 1em;  
+    display: inline-block;
+}
+
+.competences .language {
+    margin-top: 2em;
+    font-size: 1.2em;
+    border-left: 6px solid #f33b3b;
+    padding-left: 10px;
+}
+
+.competences .logiciel {
+    margin-top: 2em;
+    font-size: 1.2em;
+    border-left: 6px solid #3778e8;
+    padding-left: 10px;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: #d9d9d9; 
+    color: #313131;
+    border-radius: 20px;
+    width: 6.25em;
+    height: 6.25em;
+    text-align: center;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 0.5rem;
+}
+
+.card span {
+    font-size: 0.9rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+.card {
+    width: 80px;
+    height: 80px;
+  }
+
+.card img {
+    width: 24px;
+    height: 24px;
+  }
+
+.card span {
+    font-size: 0.75rem;
+  }
+}
+
+
+.cv-section {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: #1f1f1f;
+    color: #d9d9d9;
+    border-radius: 2em;
+}
+.cv-section h2 {
+    margin-bottom: 2em;
+}
+.cv-container {
+  max-width: 800px;
+  margin: auto;
+  border: 2px solid #d9d9d9;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.5em;
+}
+
+.cv-download .btn-download {
+  background-color: #FF7979;
+  color: white;
+  padding: 0.8em 1.5em;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cv-download .btn-download:hover {
+  background-color: #e66060;
+}
+
+
+
+
+.transition-band {
+    height: 50px;
+    background: linear-gradient(to bottom, #313131, #1f1f1f);
+}
+.footer {
+    background-color: #1f1f1f;
+    color: #d9d9d9;
+    padding: 2em 1em;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-col h4 {
+    margin-bottom: 1em;
+    border-bottom: 2px solid #d9d9d9;
+    padding-bottom: 0.5em;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.5em;
+}
+
+.footer-col a {
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+.footer-col a:hover {
+    color: #FF7979;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2em;
+    border-top: 1px solid #444;
+    padding-top: 1em;
+    font-size: 0.9em;
+}
+
+.contact {
+  background-color: #1f1f1f;
+  color: #d9d9d9;
+  padding: 2em;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact input,
+.contact textarea {
+  padding: 1em;
+  border-radius: 8px;
+  border: none;
+  font-size: 1em;
+}
+
+.contact button {
+  background-color: #FF7979;
+  color: white;
+  border: none;
+  padding: 0.8em;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.contact button:hover {
+  background-color: #e66060;
 }
