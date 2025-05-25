@@ -371,6 +371,8 @@ main{
     width: 400px; /* 200*/
     flex-shrink: 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.784);    
+    transition: transform 0.3s;
+
 }
 
 .image-placeholder {
