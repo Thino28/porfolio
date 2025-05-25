@@ -237,8 +237,20 @@ main{
 }
 
 
-
+.Langage-informatique{
+    background-color: #7c4d4d;
+    padding: 2em;
+    border-radius: 2em;
+}
+.logiciel-informatique{
+    background-color: #4d677c;
+    padding: 2em;
+    border-radius: 2em;
+}
 .competences {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
     padding: 2em;
     font-family: sans-serif;
     min-height: 100vh; 
@@ -254,17 +266,18 @@ main{
 }
 
 .competences .language {
-    margin-top: 2em;
     font-size: 1.2em;
     border-left: 6px solid #f33b3b;
     padding-left: 10px;
+    margin-bottom:1em ;
 }
 
 .competences .logiciel {
-    margin-top: 2em;
     font-size: 1.2em;
     border-left: 6px solid #3778e8;
     padding-left: 10px;
+        margin-bottom:1em ;
+
 }
 .cards-container {
     display: flex;
@@ -352,19 +365,23 @@ main{
     background-color: #2b2b2b;
     padding: 1em;
     border-radius: 1.5em;
-    width: 280px; /* 200*/
+    width: 400px; /* 200*/
     flex-shrink: 0;
 }
 
 .image-placeholder {
-    height: 260px; /*180*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 380px; /*180*/
     background-color: #d9d9d9;
     border-radius: 10px;
     margin-bottom: 1em;
 }
 .image-pro{
-    height: 280px;
-    width: 300px;
+    height: 360px;
+    width: 380px;
+    border-radius: 2em;
 }
 
 .text-placeholder {
@@ -372,13 +389,22 @@ main{
     padding: 1em;
     border-radius: 10px;
     color: white;
+    font-size: 2em;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .project-card{
         width: 200px;
     }
     .image-placeholder{
         height: 180px;
+    }
+    .image-pro{
+        height: 180px;
+        width: 200px;
+        border-radius: 1em;
+    }
+    .text-placeholder{
+        font-size:1em;
     }
 }
 
