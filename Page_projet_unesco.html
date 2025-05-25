@@ -57,4 +57,18 @@
             </ul>
         </div>
     </body>
+
+        <script>
+        const menuBurger = document.querySelector('.menu-burger');
+        const navLinks = document.querySelector('.nav-links');
+        const present = document.querySelector('#present');
+
+        present.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+        menuBurger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        });
+    </script>
+    
 </html>
