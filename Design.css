@@ -388,6 +388,9 @@ main{
     border-radius: 2em;
 }
 
+.project-card:hover{
+    transform: scale(1.05);
+}
 .image-Paintzaa{
     width: 350px;
     height: 200px;
