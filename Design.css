@@ -321,6 +321,68 @@ main{
 }
 
 
+.projets {
+    color: white;
+    padding: 2em;
+    background-color: #2b2b2b;
+    text-align: center;
+    height: 100vh ;
+}
+
+.projets h2 {
+    font-size: 2em;
+    border-bottom: 3px solid white;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.carousel-css {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #e0e0e0;
+    border-radius: 2em;
+}
+
+.project-card {
+    scroll-snap-align: start;
+    background-color: #2b2b2b;
+    padding: 1em;
+    border-radius: 1.5em;
+    width: 280px; /* 200*/
+    flex-shrink: 0;
+}
+
+.image-placeholder {
+    height: 260px; /*180*/
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+.image-pro{
+    height: 280px;
+    width: 300px;
+}
+
+.text-placeholder {
+    background-color: #1f1f1f;
+    padding: 1em;
+    border-radius: 10px;
+    color: white;
+}
+@media screen and (max-width: 500px) {
+    .project-card{
+        width: 200px;
+    }
+    .image-placeholder{
+        height: 180px;
+    }
+}
+
+
 .cv-section {
     text-align: center;
     padding: 2em 1em;
@@ -332,26 +394,26 @@ main{
     margin-bottom: 2em;
 }
 .cv-container {
-  max-width: 800px;
-  margin: auto;
-  border: 2px solid #d9d9d9;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 1.5em;
+    max-width: 800px;
+    margin: auto;
+    border: 2px solid #d9d9d9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1.5em;
 }
 
 .cv-download .btn-download {
-  background-color: #FF7979;
-  color: white;
-  padding: 0.8em 1.5em;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
+    background-color: #FF7979;
+    color: white;
+    padding: 0.8em 1.5em;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 
 .cv-download .btn-download:hover {
-  background-color: #e66060;
+    background-color: #e66060;
 }
 
 
@@ -415,39 +477,39 @@ main{
 }
 
 .contact {
-  background-color: #1f1f1f;
-  color: #d9d9d9;
-  padding: 2em;
-  text-align: center;
+    background-color: #1f1f1f;
+    color: #d9d9d9;
+    padding: 2em;
+    text-align: center;
 }
 
 .contact form {
-  max-width: 600px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .contact input,
 .contact textarea {
-  padding: 1em;
-  border-radius: 8px;
-  border: none;
-  font-size: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
 }
 
 .contact button {
-  background-color: #FF7979;
-  color: white;
-  border: none;
-  padding: 0.8em;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 1em;
-  transition: background 0.3s;
+    background-color: #FF7979;
+    color: white;
+    border: none;
+    padding: 0.8em;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
 }
 
 .contact button:hover {
-  background-color: #e66060;
+    background-color: #e66060;
 }
